@@ -1,0 +1,725 @@
+<?xml version="1.0"?>
+<robot name="athos_description"
+       xmlns:xi="http://www.w3.org/2001/XInclude">
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/base_link_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/base_link_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="10" />
+      <origin xyz="0 0 0.177" rpy="0 -0 0"/>
+      <inertia ixx="0.3338" ixy="0" ixz="0" iyy="0.4783" iyz="0" izz="0.3338"/>
+    </inertial>
+  </link>
+  <link name="back_sonar">
+    <visual>
+      <origin xyz="-0.187 0 0.247" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/back_sonar_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.187 0 0.247" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/back_sonar_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="front_sonar">
+    <visual>
+      <origin xyz="0.193 0 0.25" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/front_sonar_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.193 0 0.25" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/front_sonar_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="p3at_front_left_axle">
+    <visual>
+      <origin xyz="0.135 0.156 0.111" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_front_left_axle_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.135 0.156 0.111" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_front_left_axle_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="p3at_front_left_hub">
+    <visual>
+      <origin xyz="0 0.041 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_front_left_hub_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.041 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_front_left_hub_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="p3at_front_left_wheel">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_front_left_wheel_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_front_left_wheel_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.5" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="0.0124118" ixy="0" ixz="0" iyy="0.0152182" iyz="0" izz="0.011764"/>
+    </inertial>
+  </link>
+  <link name="p3at_front_right_axle">
+    <visual>
+      <origin xyz="0.135 -0.156 0.111" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_front_right_axle_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.135 -0.156 0.111" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_front_right_axle_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="p3at_front_right_hub">
+    <visual>
+      <origin xyz="0 -0.041 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_front_right_hub_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.041 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_front_right_hub_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="p3at_front_right_wheel">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_front_right_wheel_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_front_right_wheel_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.5" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="0.0124118" ixy="0" ixz="0" iyy="0.0152182" iyz="0" izz="0.011764"/>
+    </inertial>
+  </link>
+  <link name="top_plate">
+    <visual>
+      <origin xyz="0.003 0 0.274" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/top_plate_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.003 0 0.274" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/top_plate_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="-0.025 0 -0.223" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="suporte_base">
+    <visual>
+      <origin xyz="0.073 0.16 0.004" rpy="0 0 -1.57"/>
+      <geometry>
+        <mesh filename="file:///tmp/suporte_base_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.073 0.16 0.004" rpy="0 0 -1.57"/>
+      <geometry>
+        <mesh filename="file:///tmp/suporte_base_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="5" />
+      <origin xyz="0.16 -0.0717771 0.293842" rpy="0 -0 0"/>
+      <inertia ixx="0.0517372" ixy="-1.97535e-17" ixz="2.61113e-19" iyy="0.0813923" iyz="-0.000218091" izz="0.0306998"/>
+    </inertial>
+  </link>
+  <link name="suporte_armControl">
+    <visual>
+      <origin xyz="0.03 -0.043 0.145" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/suporte_armControl_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.03 -0.043 0.145" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/suporte_armControl_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.267051" />
+      <origin xyz="0.13 0.015 0.03" rpy="0 -0 0"/>
+      <inertia ixx="8.86846e-05" ixy="9.87771e-19" ixz="-5.58485e-19" iyy="0.00157153" iyz="3.79589e-20" izz="0.00152594"/>
+    </inertial>
+  </link>
+  <link name="suporte_depth">
+    <visual>
+      <origin xyz="0.03 -0.043 0.511" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/suporte_depth_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.03 -0.043 0.511" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/suporte_depth_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.0546" />
+      <origin xyz="0.13 0.0015 0.035" rpy="0 -0 0"/>
+      <inertia ixx="2.2336e-05" ixy="5.12155e-20" ixz="-7.91825e-20" iyy="0.000329875" iyz="1.11181e-20" izz="0.000307621"/>
+    </inertial>
+  </link>
+  <link name="suporte_kinect">
+    <visual>
+      <origin xyz="0 -0.043 0.6" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/suporte_kinect_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.043 0.6" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/suporte_kinect_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.374047" />
+      <origin xyz="0.16 0.015 0.03" rpy="0 -0 0"/>
+      <inertia ixx="0.000133581" ixy="5.26579e-19" ixz="-8.57135e-19" iyy="0.00329558" iyz="3.68949e-20" izz="0.00322173"/>
+    </inertial>
+  </link>
+  <link name="suporte_monitor">
+    <visual>
+      <origin xyz="0.32 -0.103 0.335" rpy="-1.5708 3.33067e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="file:///tmp/suporte_monitor_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.32 -0.103 0.335" rpy="-1.5708 3.33067e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="file:///tmp/suporte_monitor_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.04512" />
+      <origin xyz="0.00735106 -0.0176489 -0.16" rpy="0 -0 0"/>
+      <inertia ixx="0.000387649" ixy="1.54468e-06" ixz="-1.8267e-20" iyy="0.000387649" iyz="-2.82879e-19" izz="5.25032e-06"/>
+    </inertial>
+  </link>
+  <link name="arm_control_box">
+    <visual>
+      <origin xyz="0.0728041 -0.043 0.175" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/arm_control_box_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0728041 -0.043 0.175" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/arm_control_box_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.88581" />
+      <origin xyz="0.0874605 0.0306742 0.0677388" rpy="0 -0 0"/>
+      <inertia ixx="0.0039605" ixy="-3.63568e-06" ixz="1.0258e-06" iyy="0.00771581" iyz="0.000451236" izz="0.00650787"/>
+    </inertial>
+  </link>
+  <link name="tv">
+    <visual>
+      <origin xyz="0.159977 -0.11572 0.36" rpy="1.5708 -2.72875e-16 3.14159"/>
+      <geometry>
+        <mesh filename="file:///tmp/tv_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.159977 -0.11572 0.36" rpy="1.5708 -2.72875e-16 3.14159"/>
+      <geometry>
+        <mesh filename="file:///tmp/tv_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0414" />
+      <origin xyz="-1.1419e-11 0.00631759 0.0456903" rpy="0 -0 0"/>
+      <inertia ixx="0.00221522" ixy="-4.16342e-11" ixz="5.25245e-13" iyy="0.00492778" iyz="3.11823e-05" izz="0.00695266"/>
+    </inertial>
+  </link>
+  <link name="tampa1">
+    <visual>
+      <origin xyz="0 -0.043 0.6" rpy="-1.5708 1.55431e-15 -1.5708"/>
+      <geometry>
+        <mesh filename="file:///tmp/tampa1_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.043 0.6" rpy="-1.5708 1.55431e-15 -1.5708"/>
+      <geometry>
+        <mesh filename="file:///tmp/tampa1_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.000874663" />
+      <origin xyz="0.015 -0.015 -0.000491942" rpy="0 -0 0"/>
+      <inertia ixx="6.38808e-08" ixy="1.6038e-36" ixz="-8.69148e-23" iyy="6.38808e-08" iyz="-7.07618e-23" izz="1.27617e-07"/>
+    </inertial>
+  </link>
+  <link name="tampa2">
+    <visual>
+      <origin xyz="0 -0.073 0.6" rpy="-1.5708 -1.11022e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="file:///tmp/tampa2_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.073 0.6" rpy="-1.5708 -1.11022e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="file:///tmp/tampa2_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.000874663" />
+      <origin xyz="0.015 -0.015 -0.000491942" rpy="0 -0 0"/>
+      <inertia ixx="6.38808e-08" ixy="5.7871e-38" ixz="-2.68916e-23" iyy="6.38808e-08" iyz="6.36857e-23" izz="1.27617e-07"/>
+    </inertial>
+  </link>
+  <link name="tampa3">
+    <visual>
+      <origin xyz="0.32 -0.103 0.6" rpy="1.5708 -1.11022e-16 1.5708"/>
+      <geometry>
+        <mesh filename="file:///tmp/tampa3_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.32 -0.103 0.6" rpy="1.5708 -1.11022e-16 1.5708"/>
+      <geometry>
+        <mesh filename="file:///tmp/tampa3_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.000874663" />
+      <origin xyz="0.015 0.015 0.000491942" rpy="0 -0 0"/>
+      <inertia ixx="6.38808e-08" ixy="2.33265e-22" ixz="4.35158e-23" iyy="6.38808e-08" iyz="6.35716e-23" izz="1.27617e-07"/>
+    </inertial>
+  </link>
+  <link name="tampa4">
+    <visual>
+      <origin xyz="0.32 -0.073 0.6" rpy="1.5708 3.33067e-16 1.5708"/>
+      <geometry>
+        <mesh filename="file:///tmp/tampa4_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.32 -0.073 0.6" rpy="1.5708 3.33067e-16 1.5708"/>
+      <geometry>
+        <mesh filename="file:///tmp/tampa4_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.000874663" />
+      <origin xyz="0.015 0.015 0.000491942" rpy="0 -0 0"/>
+      <inertia ixx="6.38808e-08" ixy="7.27919e-23" ixz="7.21577e-23" iyy="6.38808e-08" iyz="-1.82023e-23" izz="1.27617e-07"/>
+    </inertial>
+  </link>
+  <link name="p3at_back_left_axle">
+    <visual>
+      <origin xyz="-0.134 0.156 0.111" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_back_left_axle_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.134 0.156 0.111" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_back_left_axle_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="p3at_back_left_hub">
+    <visual>
+      <origin xyz="0 0.041 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_back_left_hub_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.041 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_back_left_hub_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="p3at_back_left_wheel">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_back_left_wheel_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_back_left_wheel_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.5" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="0.0124118" ixy="0" ixz="0" iyy="0.0152182" iyz="0" izz="0.011764"/>
+    </inertial>
+  </link>
+  <link name="p3at_back_right_axle">
+    <visual>
+      <origin xyz="-0.134 -0.156 0.111" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_back_right_axle_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.134 -0.156 0.111" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_back_right_axle_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="p3at_back_right_hub">
+    <visual>
+      <origin xyz="0 -0.041 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_back_right_hub_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.041 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_back_right_hub_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="p3at_back_right_wheel">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_back_right_wheel_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///tmp/p3at_back_right_wheel_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.5" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="0.0124118" ixy="0" ixz="0" iyy="0.0152182" iyz="0" izz="0.011764"/>
+    </inertial>
+  </link>
+  <joint name="base_back_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="back_sonar"/>
+    <origin xyz="-0.187 0 0.247" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="base_front_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="front_sonar"/>
+    <origin xyz="0.193 0 0.25" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="base_front_left_axle_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="p3at_front_left_axle"/>
+    <origin xyz="0.135 0.156 0.111" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="base_front_left_hub_joint" type="fixed">
+    <parent link="p3at_front_left_axle"/>
+    <child  link="p3at_front_left_hub"/>
+    <origin xyz="0 0.041 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="p3at_front_left_wheel_joint" type="continuous">
+    <parent link="p3at_front_left_hub"/>
+    <child  link="p3at_front_left_wheel"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-3.14159" upper="3.14159" effort="100" velocity="100" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="base_front_right_axle_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="p3at_front_right_axle"/>
+    <origin xyz="0.135 -0.156 0.111" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="base_front_right_hub_joint" type="fixed">
+    <parent link="p3at_front_right_axle"/>
+    <child  link="p3at_front_right_hub"/>
+    <origin xyz="0 -0.041 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="p3at_front_right_wheel_joint" type="continuous">
+    <parent link="p3at_front_right_hub"/>
+    <child  link="p3at_front_right_wheel"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-3.14159" upper="3.14159" effort="100" velocity="100" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="base_top_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="top_plate"/>
+    <origin xyz="0.003 0 0.274" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="pioneer2suporte" type="fixed">
+    <parent link="top_plate"/>
+    <child  link="suporte_base"/>
+    <origin xyz="0.073 0.16 0.004" rpy="0 0 -1.57 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="armControl" type="fixed">
+    <parent link="suporte_base"/>
+    <child  link="suporte_armControl"/>
+    <origin xyz="0.03 -0.043 0.145" rpy="1.5708 -0 0 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="depth_joint" type="fixed">
+    <parent link="suporte_base"/>
+    <child  link="suporte_depth"/>
+    <origin xyz="0.03 -0.043 0.511" rpy="1.5708 -0 0 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="kinect_joint" type="fixed">
+    <parent link="suporte_base"/>
+    <child  link="suporte_kinect"/>
+    <origin xyz="0 -0.043 0.6" rpy="1.5708 -0 0 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="monitor_joint" type="fixed">
+    <parent link="suporte_base"/>
+    <child  link="suporte_monitor"/>
+    <origin xyz="0.32 -0.103 0.335" rpy="-1.5708 3.33067e-16 -1.5708 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="suporte2controlbox" type="fixed">
+    <parent link="suporte_base"/>
+    <child  link="arm_control_box"/>
+    <origin xyz="0.0728041 -0.043 0.175" rpy="1.5708 -0 0 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="suporte2tv" type="fixed">
+    <parent link="suporte_base"/>
+    <child  link="tv"/>
+    <origin xyz="0.159977 -0.11572 0.36" rpy="1.5708 -2.72875e-16 3.14159 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="tampa_joint1" type="fixed">
+    <parent link="suporte_base"/>
+    <child  link="tampa1"/>
+    <origin xyz="0 -0.043 0.6" rpy="-1.5708 1.55431e-15 -1.5708 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="tampa_joint2" type="fixed">
+    <parent link="suporte_base"/>
+    <child  link="tampa2"/>
+    <origin xyz="0 -0.073 0.6" rpy="-1.5708 -1.11022e-16 -1.5708 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="tampa_joint3" type="fixed">
+    <parent link="suporte_base"/>
+    <child  link="tampa3"/>
+    <origin xyz="0.32 -0.103 0.6" rpy="1.5708 -1.11022e-16 1.5708 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="tampa_joint4" type="fixed">
+    <parent link="suporte_base"/>
+    <child  link="tampa4"/>
+    <origin xyz="0.32 -0.073 0.6" rpy="1.5708 3.33067e-16 1.5708 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="bp3at_back_left_axle_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="p3at_back_left_axle"/>
+    <origin xyz="-0.134 0.156 0.111" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="p3at_back_left_hub_joint" type="fixed">
+    <parent link="p3at_back_left_axle"/>
+    <child  link="p3at_back_left_hub"/>
+    <origin xyz="0 0.041 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="p3at_back_left_wheel_joint" type="continuous">
+    <parent link="p3at_back_left_hub"/>
+    <child  link="p3at_back_left_wheel"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-3.14159" upper="3.14159" effort="100" velocity="100" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="bp3at_back_right_axle_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="p3at_back_right_axle"/>
+    <origin xyz="-0.134 -0.156 0.111" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="p3at_back_right_hub_joint" type="fixed">
+    <parent link="p3at_back_right_axle"/>
+    <child  link="p3at_back_right_hub"/>
+    <origin xyz="0 -0.041 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="p3at_back_right_wheel_joint" type="continuous">
+    <parent link="p3at_back_right_hub"/>
+    <child  link="p3at_back_right_wheel"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-3.14159" upper="3.14159" effort="100" velocity="100" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+</robot>

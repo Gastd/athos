@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+    <name>athos_description</name>
+    <version>1.0.0</version>
+    <description>This package contains Athos (Pioneer 3AT) robot description files</description>
+
+    <maintainer email="waldezjr14@gmail.com">Waldez Junior</maintainer>
+    <maintainer email="gabriel.araujo.5000@gmail.com">Gabriel Araujo</maintainer>
+
+    <license>BSD</license>
+    
+    <author email="waldezjr14@gmail.com">Waldez Junior</author>
+
+    <buildtool_depend>catkin</buildtool_depend>
+    <build_depend>roscpp</build_depend>
+    <build_depend>gazebo_ros</build_depend> 
+    <build_depend>sensor_msgs</build_depend>
+    <run_depend>sensor_msgs</run_depend>
+    <run_depend>roscpp</run_depend>
+    <run_depend>athos_control</run_depend>
+    <run_depend>gazebo_ros</run_depend> 
+
+    <export>
+    </export>
+</package>
