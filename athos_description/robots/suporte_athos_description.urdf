@@ -7,7 +7,7 @@
         xyz="0.16 -0.0717771259809899 0.293842379381435"
         rpy="0 0 0" />
       <mass
-        value="1" />
+        value="0.5" />
       <inertia
         ixx="0.0517372413967915"
         ixy="2.32967941812823E-17"
@@ -478,7 +478,7 @@
     <material value="Gazebo/Grey"/>
   </gazebo>
 <!-- tv e caixa do controlador do braco -->
-<link
+<!-- <link
     name="tv">
     <inertial>
       <origin
@@ -530,7 +530,7 @@
       link="tv" />
     <axis
       xyz="0 0 0" />
-  </joint>
+  </joint> -->
   <link
     name="arm_control_box">
     <inertial>
@@ -538,7 +538,7 @@
         xyz="0.0874604605423992 0.0306742048420322 0.0677387951607025"
         rpy="0 0 0" />
       <mass
-        value="1.88580869219064" />
+        value="0.45" />
       <inertia
         ixx="0.00396050112760631"
         ixy="3.40564468788146E-06"

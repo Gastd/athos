@@ -17,7 +17,7 @@
 
   <node name="controller_spawner" pkg="controller_manager" type="spawner" args="claw_controller arm_controller joint_state_controller" respawn="false" output="screen"/>
 
-  <node name="wheel_publisher" pkg="athos_description" type="wheel_publisher" /> <!--Add new node for wheels -->
+  <!-- <node name="wheel_publisher" pkg="athos_description" type="wheel_publisher" /> Add new node for wheels  -->
 
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" /> 
   
